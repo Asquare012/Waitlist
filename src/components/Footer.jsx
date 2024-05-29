@@ -11,7 +11,7 @@ const Footer = () => {
           161, Kandelia Bara Street, Off Sanusi <br /> Fafunwa, VI, Lagos.
         </span>
         <span className="Call">
-          +2349012452602 <img src={copy} alt="copy" />
+          +2349012452602 <img src={copy} alt="copy" height="16px" />
         </span>
       </div>
       <div className="Footer-Mid">
