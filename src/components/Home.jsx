@@ -1,7 +1,6 @@
 import Hero from "./Hero";
 import Video from "./Video";
 import Benefit from "./Benefit";
-import Join from "./Join";
 
 const Home = () => {
   return (
@@ -9,7 +8,6 @@ const Home = () => {
       <Hero />
       <Video />
       <Benefit />
-      <Join />
     </>
   );
 };

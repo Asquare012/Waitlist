@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import FaQ from "./components/FaQ";
 //
+import Join from "./components/Join";
 import Footer from "./components/Footer";
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/faq" Component={FaQ} />
         </Routes>
       </HashRouter>
+      <Join />
       <Footer />
     </div>
   );
