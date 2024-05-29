@@ -1,0 +1,84 @@
+// colors
+$white: #ffffff;
+$black: #000000;
+$blue: #2C52B7;
+$grey: #F1F5F9;
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Hero {
+    height: 700px;
+    background: url("../images/Hero-Background.png");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -220px;
+    padding: 100px 5% 0 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+
+    .Hero-Top {
+        font-size: 55px;
+        font-weight: 700;
+        margin-bottom: 45px;
+    }
+
+    .Hero-Mid {
+        font-size: 18px;
+        padding: 0 5%;
+        margin-bottom: 30px;
+    }
+
+    .Hero-Bottom {
+        height: 70px;
+        width: 50%;
+        @include flex;
+
+        .Input-Container {
+            display: flex;
+            align-items: center;
+            background-color: $grey;
+            width: 75%;
+            height: 80%;
+            border-radius: 25px;
+            padding: 0 3%;
+
+            input {
+                border: none;
+                outline: none;
+                height: 100%;
+                width: 100%;
+                border-radius: 25px 0 0 25px;
+                background-color: $grey;
+
+                &::placeholder {
+                    color: $black;
+                    font-weight: 500;
+                }
+            }
+
+            button {
+                border: none;
+                outline: none;
+                height: 75%;
+                width: 60%;
+                border-radius: 25px;
+                background-color: $blue;
+                color: $white;
+                @include flex;
+                cursor: pointer;
+
+                img {
+                    margin-left: 5px;
+                }
+            }
+        }
+    }
+}

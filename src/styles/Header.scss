@@ -1,0 +1,71 @@
+// colors
+$white: #ffffff;
+$black: #000000;
+$blue: #2C52B7;
+$grey: #F1F5F9;
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Header {
+    height: 80px;
+
+    ol {
+        height: 100%;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        padding-left: 5%;
+
+        li {
+            list-style-type: none;
+            cursor: pointer;
+            @include flex;
+
+            a {
+                text-decoration: none;
+                color: $black;
+                padding: 3px 5px;
+
+                &:hover,
+                &:active {
+                    background-color: $grey;
+                    color: $blue;
+                    border-radius: 20px;
+                    color: $blue;
+                }
+            }
+
+
+
+            &:nth-child(2) {
+                margin-left: 15%;
+            }
+
+            &:nth-child(3) {
+                margin: 0 20% 0 15%;
+            }
+
+            &:last-child {
+                button {
+                    border: none;
+                    outline: none;
+                    height: 35px;
+                    width: 160px;
+                    border-radius: 25px;
+                    background-color: $blue;
+                    color: $white;
+                    @include flex;
+                    cursor: pointer;
+
+                    img {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

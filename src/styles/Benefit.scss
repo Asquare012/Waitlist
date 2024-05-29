@@ -1,0 +1,99 @@
+// colors
+$black: #000000;
+
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Benefit {
+    height: 500px;
+    padding: 0 5%;
+    margin-top: 80px;
+
+    .Benefit-Top {
+        height: 20%;
+        @include flex;
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .Benefit-Bottom {
+        height: 80%;
+
+        ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,
+                    minmax(150px, 1fr));
+            height: 100%;
+            gap: 30px;
+
+            li {
+                list-style: none;
+                height: 70%;
+                cursor: pointer;
+
+                .Item-Top {
+                    height: 60%;
+                    @include flex;
+                    flex-direction: column;
+                    border-radius: 15px;
+                    font-weight: 700;
+
+                    img {
+                        margin-top: 10px;
+                    }
+
+                }
+
+                // various background colour
+                &:first-child {
+                    .Item-Top {
+                        background-color: #A7F3D0;
+                        color: #047857;
+                    }
+                }
+
+                &:nth-child(2) {
+                    .Item-Top {
+                        background-color: #FFE4E6;
+                        color: #BE123C;
+
+                    }
+                }
+
+                &:nth-child(3) {
+                    .Item-Top {
+                        background-color: #E0F2FE;
+                        color: #0369A1;
+                    }
+                }
+
+                &:last-child {
+                    .Item-Top {
+                        background-color: #CBD5E1;
+                        color: #4338CA;
+                    }
+                }
+
+                .Item-Bottom {
+                    height: 40%;
+                    @include flex;
+                    flex-direction: column;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 14px;
+
+                    span {
+                        display: block;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+                        font-size: 16px
+                    }
+                }
+            }
+        }
+    }
+}

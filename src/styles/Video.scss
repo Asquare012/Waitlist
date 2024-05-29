@@ -1,0 +1,40 @@
+// colors
+$black: #000000;
+
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Video-Container {
+    height: 500px;
+    padding: 0 5%;
+    @include flex;
+    flex-direction: column;
+
+    .Title {
+        height: 10%;
+        width: 50%;
+        font-size: 28px;
+        font-weight: 600;
+        @include flex;
+    }
+
+    .Video-Section {
+        height: 90%;
+        width: 100%;
+        @include flex;
+        padding: 30px 0;
+        border-radius: 15px;
+        height: 100%;
+        width: 70%;
+        background: url("../images/video.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        @include flex;
+        cursor: pointer;
+    }
+}
