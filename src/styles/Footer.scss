@@ -70,5 +70,31 @@ footer {
             }
         }
     }
+}
 
+// MEDIA QUERIES
+@media screen and (max-width:480px) {
+    footer {
+        height: 480px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .Footer-Left {
+            gap: 10px;
+            text-align: center;
+            width: 100%;
+            @include flex;
+        }
+
+        .Footer-Mid,
+        .Footer-Right {
+            gap: 20px;
+            width: 100%;
+
+            ol {
+                gap: 10px;
+            }
+        }
+    }
 }

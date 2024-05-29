@@ -13,7 +13,7 @@ const Join = () => {
         </button>
       </div>
       <div className="Join-Right">
-        <img src={backdropImg} alt="backdrop" />
+        <img src={backdropImg} alt="backdrop" height="80%" width="90%" />
       </div>
     </div>
   );

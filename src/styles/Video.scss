@@ -38,3 +38,57 @@ $black: #000000;
         cursor: pointer;
     }
 }
+
+@media screen and (max-width:1060px) {
+    .Video-Container {
+        height: 400px;
+        margin-top: 30px;
+
+        .Title {
+            width: 90%;
+        }
+
+        .Video-Section {
+            width: 90%;
+            min-width: 500px;
+        }
+    }
+}
+
+@media screen and (max-width:700px) {
+    .Video-Container {
+        padding: 0 1;
+        min-height: 300px;
+        height: 350px;
+
+        .Title {
+            width: 90%;
+            height: 40px;
+            font-size: 25px;
+        }
+
+        .Video-Section {
+            width: 100%;
+            min-width: 300px;
+            min-height: 150px;
+            background-size: contain;
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .Video-Container {
+        padding: 0 1;
+
+        .Title {
+            width: 90%;
+            font-size: 23px;
+        }
+
+        .Video-Section {
+            min-height: 220px;
+            height: 220px;
+            width: 100%;
+        }
+    }
+}

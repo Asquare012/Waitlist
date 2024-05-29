@@ -13,22 +13,23 @@ $grey: #F1F5F9;
 .Join {
     height: 400px;
     background: url("../images/backdrop.png");
-    background-size: contain;
-    margin: 0 8% 100px 8%;
+    background-size: cover;
+    margin: 100px 8% 50px 8%;
     background-repeat: no-repeat;
     display: flex;
-    overflow: hidden;
+    padding: 0 3%;
+    border-radius: 25px;
 
     .Join-Left {
         width: 50%;
         height: 100%;
         display: flex;
+        justify-content: center;
         flex-direction: column;
-        justify-content: flex-end;
-        padding: 0 0 5% 50px;
-        line-height: 25px;
+        line-height: 30px;
         color: $white;
         font-size: 20px;
+        padding-right: 5px;
 
 
         button {
@@ -52,9 +53,50 @@ $grey: #F1F5F9;
     .Join-Right {
         width: 50%;
         height: 100%;
+        @include flex;
+    }
+}
 
-        img {
-            margin: 100px 0 -50px 20%;
+// MEDIA QUERIES
+@media screen and (max-width:720px) {
+    .Join {
+        height: 320px;
+
+        .Join-Left {
+            width: 90%;
+            font-size: 16px;
+        }
+
+        .Join-Right {
+            width: 90%;
+
+            img {
+                height: 70%;
+                width: 95%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:530px) {
+    .Join {
+        height: 430px;
+        flex-direction: column-reverse;
+        @include flex;
+        padding: 10px 0;
+
+        .Join-Left {
+            width: 90%;
+            font-size: 16px;
+        }
+
+        .Join-Right {
+            width: 90%;
+
+            img {
+                height: 95%;
+                width: 95%;
+            }
         }
     }
 }

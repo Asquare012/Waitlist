@@ -5,8 +5,7 @@ const Hero = () => {
   return (
     <div className="Hero">
       <div className="Hero-Top">
-        Do you travel by bus? We’re <br />
-        currently cooking for you.
+        Do you travel by bus? We’re currently cooking for you.
       </div>
       <div className="Hero-Mid">
         We are launching the best bus transport deals and booking application to

@@ -82,3 +82,92 @@ $grey: #F1F5F9;
         }
     }
 }
+
+// MEDIA QUERIES
+@media screen and (max-width:1024px) {
+    .Hero {
+        padding: 80px 2% 0 2%;
+        margin-bottom: -250px;
+
+        .Hero-Top {
+            font-size: 45px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .Hero-Bottom {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width:680px) {
+    .Hero {
+        padding: 80px 2% 0 2%;
+        margin-bottom: -240px;
+
+        .Hero-Top {
+            font-size: 37px;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        .Hero-Mid {
+            font-size: 15px;
+        }
+
+        .Hero-Bottom {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .Hero {
+        padding: 50px 2% 0 2%;
+        margin-bottom: -250px;
+
+        .Hero-Top {
+            font-size: 35px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .Hero-Mid {
+            font-size: 14px;
+            padding: 0 3%;
+        }
+
+        .Hero-Bottom {
+            width: 100%;
+
+            .Input-Container {
+                width: 90%;
+                height: 70%;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+    .Hero {
+        margin-bottom: -350px;
+
+        .Hero-Top {
+            font-size: 30px;
+            margin-bottom: 18px;
+        }
+
+        .Hero-Bottom {
+            width: 100%;
+
+            .Input-Container {
+                width: 98%;
+            }
+        }
+    }
+}
